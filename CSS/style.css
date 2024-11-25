@@ -1,0 +1,103 @@
+:root {
+  --bg-body: #f7ecde;
+  --font-family-Ftitle: "Pacifico", cursive;
+  --font-family-Stitle: "Righteous", serif;
+  --font-family-site: "PT Sans Caption", serif;
+  --color-title: #352e28;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--bg-body);
+  font-family: var(--font-family-site);
+}
+.head-title {
+  font-family: var(--font-family-Ftitle);
+  font-size: 3.125rem;
+  width: fit-content;
+  color: var(--color-title);
+  position: relative;
+  cursor: pointer;
+}
+
+.head-title::after {
+  content: "";
+  position: absolute;
+  background-color: #fec260;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: height 0.5s;
+}
+.head-title:hover::after {
+  height: 70%;
+}
+.sec-title {
+  font-family: var(--font-family-Stitle);
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  color: transparent;
+}
+
+.body-bookmark {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-submit {
+  background-color: #d1512d;
+  transition: 0.5s;
+}
+.btn-submit:focus {
+  box-shadow: none;
+}
+.btn-submit:hover {
+  background-color: #bb4120;
+  border-color: #a03315;
+}
+.btn-visit {
+  background-color: #9eb23b;
+  border-color: #9eb23b;
+  transform: 0.5s;
+  box-shadow: none;
+}
+.btn-visit:hover {
+  background-color: #8a9e23;
+  border-color: #6e8018;
+}
+.btn-Delete {
+  background-color: #eb1d36;
+  transition: 0.5s;
+  box-shadow: none;
+}
+.btn-Delete:hover {
+  background-color: #d30820;
+  border-color: #ba081d;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #ddd;
+}

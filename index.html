@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookmark</title>
+        <!-- ========== fonts ========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet">
+        <!-- =========fonts ========== -->
+
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+
+    <body>
+
+
+        <header class="content py-5 mb-3">
+            <h1 class="head-title m-auto position-relative">Bookmarker</h1>
+        </header>
+
+        <main>
+            <section>
+                <div class="container">
+                    <div class="body-bookmark px-3 py-4">
+                        <h2 class="sec-title text-center mb-4"><i class="fa-solid fa-bookmark"></i> Bookmark your
+                            favorite
+                            sites <i class="fa-solid fa-bookmark"></i></h2>
+                        <div class="form-bookmark">
+                            <div class="mb-4">
+                                <label for="siteName" class="form-label fw-600"><i
+                                        class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="siteURL" class="form-label fw-600"><i class="fa-solid fa-link pe-2"></i>Site
+                                    URL</label>
+                                <input type="text" class="form-control" id="siteURL" placeholder="Website URL"
+                                    aria-describedby="emailHelp">
+                            </div>
+
+                            <button class="btn btn-submit text-white d-block mx-auto px-5">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4">
+                <div class="container">
+                    <div class="my-4 w-50 mx-auto">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search By Name"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <table class="table text-center bg-white">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+        </main>
+
+
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/script.js"></script>
+        <script src="JS/sweetalert2.min.js"></script>
+    </body>
+
+</html>
